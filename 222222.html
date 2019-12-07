@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+p.a {
+  font-family: "Courier New", Courier, monospace;
+  text-align:center;
+}
+h3.a {
+  font-family: "Courier New", Courier, monospace;
+  text-align:center;
+}
+
+.footer-social-icons {
+    width: 350px;
+    display:block;
+    margin: 0 auto;
+    text-align:center;
+}
+.social-icon {
+    color: #f5f;
+}
+ul.social-icons {
+    margin-top: 10px;
+}
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+}
+.social-icons a {
+    color: #000;
+    text-decoration: none;
+}
+.fa-at {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #ffffff;
+}
+.fa-at:hover {
+    background-color: #014421;
+    color: #fff
+}
+
+.fa-linkedin {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #ffffff;
+}
+.fa-linkedin:hover {
+    background-color: #0073a4;
+    color: #fff
+    
+}
+
+.fa-github {
+  padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #ffffff;
+    
+}
+.fa-github:hover {
+    background-color: #5a32a3;
+    color: #fff
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.responsive {
+  width: 100%;
+  height: auto;
+}
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  #background-color: #eee;
+  font-family: "Courier New", Courier, monospace;
+  text-align:center;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+.cool-beans{animation:fading 8s infinite}@keyframes fading{0%{opacity:0.001}50%{opacity:1}100%{opacity:0.001}}
+
+</style>
+</head>
+<body>
+
+
+<p class="a">Nikolas Gordon. </p>
+
+<div class= "cool-beans">
+	<img src="art.jpg" alt="Pictures" class="responsive" style="width:50%">
+	<img src="art2.jpg" alt="Pictures" class="responsive" style="width:50%">
+	<img src="art3.jpg" alt="Pictures" class="responsive" style="width:50%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("responsive");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 8000);    
+}
+</script>
+
+
+
+<ul class="breadcrumb">
+  <li><a href="file:///C:/Users/Nikolas/Downloads/websiter/222222.html">Home</a></li>
+  <li><a href="file:///C:/Users/Nikolas/Downloads/websiter/333333.html">About Me</a></li>
+  <li><a href="file:///C:/Users/Nikolas/Downloads/websiter/Nikolas%20GordonCV.pdf">CV</a></li>
+  <li><a href="#">Projects</a></li>
+</ul>
+
+<div class="footer-social-icons">
+    <ul class="social-icons">
+  	
+	<a href="https://www.linkedin.com/in/nikolas-g-83b802106/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+   	<a href="https://github.com/nikolasgordon" class= "github" target="_blank" ><i class="fa fa-github"></i></a>
+	<a href="mailto:nikolasmgordon@gmail.com?Subject=Hello" target="_top"><i class="fa fa-at"></i></a>
+
+	</ul>
+</div>
+
+</body>
+</html>
