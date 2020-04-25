@@ -3,6 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Nikolas Gordon</title>
     <style>
         p.a {
@@ -252,6 +253,26 @@
 
         </ul>
     </div>
+<script>
+ $(document).ready(function(){
+  
+          $('.projone').hover(function(){
+            $('.projone div').append( "<p>GForce ToDo List</p>" );
+          }, function(){
+            $('.projone div p' ).remove();
+          });
 
+          $('.projtwo').hover(function(){
+            $('.projtwo div').append( "<p>Dalhouse youth service Capstone project</p>" );
+          }, function(){
+            $('.projtwo div p' ).remove();
+          });
+
+          $('.projone').click(function(){window.open("https://github.com/nikolasgordon/Gforcebitbucket")});
+          $('.projtwo').click(function(){window.open("https://github.com/Taran-Dorland/4000YProject")});
+
+          
+    });
+</script>
 </body>
 </html>
